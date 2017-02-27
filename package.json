@@ -1,0 +1,44 @@
+{
+  "name": "all-the-german-words-ascii",
+  "version": "1.0.0",
+  "description": "Provides ~1,6 million German words as lowercase ASCII list.",
+  "main": "ascii-woerter.json",
+  "bin": {
+    "woerter-ascii": "./cli.js",
+    "all-the-german-words-ascii": "./cli.js"
+  },
+  "scripts": {
+    "build": "node build.js > ascii-woerter.json",
+    "test": "npm run build && mocha && standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativecouple/all-the-german-words-ascii.git"
+  },
+  "keywords": [
+    "german",
+    "words",
+    "ascii"
+  ],
+  "author": "CreativeCouple",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/creativecouple/all-the-german-words-ascii/issues"
+  },
+  "homepage": "https://github.com/creativecouple/all-the-german-words-ascii#readme",
+  "devDependencies": {
+    "all-the-german-words": "^1.1.0",
+    "chai": "^3.5.0",
+    "lodash": "^4.17.4",
+    "mocha": "^3.2.0",
+    "standard": "^8.6.0"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "standard": {
+    "env": {
+      "mocha": true
+    }
+  }
+}
